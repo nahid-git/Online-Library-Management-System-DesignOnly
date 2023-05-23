@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta content="width=device-width, initial-scale=1.0" name="viewport">
+   <title>Profile </title>
+   <meta name="robots" content="noindex, nofollow">
+   <meta content="" name="description">
+   <meta content="" name="keywords">
+
+   <link href="assets/img/book-solid.svg" rel="icon">
+   <link href="assets/img/book-solid.svg" rel="apple-touch-icon">
+   <link href="https://fonts.gstatic.com" rel="preconnect">
+   <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet">
+   <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+   <link href="assets/css/bootstrap-icons.css" rel="stylesheet">
+   <link href="assets/css/boxicons.min.css" rel="stylesheet">
+   <link href="assets/css/quill.snow.css" rel="stylesheet">
+   <link href="assets/css/quill.bubble.css" rel="stylesheet">
+   <link href="assets/css/remixicon.css" rel="stylesheet">
+   <link href="assets/css/simple-datatables.css" rel="stylesheet">
+   <link href="assets/css/style.css" rel="stylesheet">
+   <style>
+      .btn-file {
+         position: relative;
+         overflow: hidden;
+         font-size: small;
+         height: 31px;
+      }
+
+      .btn-file input[type=file] {
+         position: absolute;
+         top: 0;
+         right: 0;
+         min-width: 30px;
+         min-height: 100%;
+         font-size: 20px;
+         text-align: right;
+         filter: alpha(opacity=0);
+         opacity: 0;
+         outline: none;
+         cursor: inherit;
+         display: block;
+      }
+   </style>
+</head>
+
+<body>
+   <header id="header" class="header fixed-top d-flex align-items-center">
+
+      <div class="d-flex align-items-center justify-content-between"> <a href="index.html"
+            class="logo d-flex align-items-center"><span class="d-none d-lg-block">Admin</span> </a> <i
+            class="bi bi-list toggle-sidebar-btn"></i></div>
+
+      <div class="search-bar">
+         <form class="search-form d-flex align-items-center" method="POST" action="#"> <input type="text" name="query"
+               placeholder="Search" title="Enter search keyword"> <button type="submit" title="Search"><i
+                  class="bi bi-search"></i></button></form>
+      </div>
+
+      <nav class="header-nav ms-auto">
+         <ul class="d-flex align-items-center">
+            <li class="nav-item d-block d-lg-none"> <a class="nav-link nav-icon search-bar-toggle " href="#"> <i
+                     class="bi bi-search"></i> </a></li>
+
+            <li class="nav-item dropdown pe-3">
+               <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown"> <img
+                     src="assets/img/nahid.jpg" alt="Profile" class="rounded-circle"> <span
+                     class="d-none d-md-block dropdown-toggle ps-2">Nahid Hasan</span> </a>
+               <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+                  <li class="dropdown-header">
+                     <h6>Nahid Hasan</h6>
+                     <span>Libarian</span>
+                  </li>
+                  <li>
+                     <hr class="dropdown-divider">
+                  </li>
+                  <li> <a class="dropdown-item d-flex align-items-center" href="users-profile.html"> <i
+                           class="bi bi-person"></i> <span>My Profile</span> </a></li>
+                  <li>
+                     <hr class="dropdown-divider">
+                  </li>
+
+                  <li> <a class="dropdown-item d-flex align-items-center" href="#"> <i
+                           class="bi bi-box-arrow-right"></i> <span>Sign Out</span> </a></li>
+                  <li>
+                     <hr class="dropdown-divider">
+                  </li>
+               </ul>
+            </li>
+         </ul>
+      </nav>
+   </header>
+   <aside id="sidebar" class="sidebar">
+      <ul class="sidebar-nav" id="sidebar-nav">
+         <li class="nav-item"> <a class="nav-link " href="index.html"> <i class="bi bi-grid"></i> <span>Dashboard</span>
+            </a></li>
+
+         <li class="nav-item">
+            <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#"> <i
+                  class="bi bi-menu-button-wide"></i><span> Categories </span><i class="bi bi-chevron-down ms-auto"></i>
+            </a>
+            <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+               <li> <a href="add-cata.html"> <i class="bi bi-circle"></i><span> Add Category</span> </a></li>
+               <li> <a href="manage-cata.html"> <i class="bi bi-circle"></i><span>Manage Category</span> </a></li>
+            </ul>
+         </li>
+
+         <li class="nav-item">
+            <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#"> <i
+                  class="bi bi-layout-text-window-reverse"></i><span>Books</span><i
+                  class="bi bi-chevron-down ms-auto"></i> </a>
+            <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+               <li> <a href="add-book.html"> <i class="bi bi-circle"></i><span>Add Book</span> </a></li>
+               <li> <a href="manage-books.html"> <i class="bi bi-circle"></i><span>Manage Books</span> </a></li>
+            </ul>
+         </li>
+
+         </li>
+         <li class="nav-heading">Pages</li>
+         <li class="nav-item"> <a class="nav-link collapsed" href="/manage-issu-books.html">
+               <span><i class="bi bi-card-list"></i></span>
+               <span>Manage Issu Books</span>
+            </a>
+         </li>
+         <li class="nav-item"> <a class="nav-link collapsed" href="users-profile.html"> <i class="bi bi-person"></i>
+               <span>Profile</span> </a></li>
+         <li class="nav-item"> <a class="nav-link collapsed" href=""> <i class="bi bi-card-list"></i> <span>Reg
+                  Students</span> </a></li>
+      </ul>
+   </aside>
+   <main id="main" class="main">
+      <div class="pagetitle">
+         <h1>Profile</h1>
+         <nav>
+            <ol class="breadcrumb">
+               <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+               <li class="breadcrumb-item">Users</li>
+               <li class="breadcrumb-item active">Profile</li>
+            </ol>
+         </nav>
+      </div>
+      <section class="section profile">
+         <div class="row">
+            <div class="col-xl-4">
+               <div class="card">
+                  <div class="card-body profile-card pt-4 d-flex flex-column align-items-center">
+                     <img src="assets/img/nahid.jpg" alt="Profile" class="rounded-circle">
+                     <h2>Nahid Hasan</h2>
+                     <h3>Libarian</h3>
+                  </div>
+               </div>
+            </div>
+            <div class="col-xl-8">
+               <div class="card">
+                  <div class="card-body pt-3">
+                     <ul class="nav nav-tabs nav-tabs-bordered">
+                        <li class="nav-item"> <button class="nav-link active" data-bs-toggle="tab"
+                              data-bs-target="#profile-overview">Overview</button></li>
+                        <li class="nav-item"> <button class="nav-link" data-bs-toggle="tab"
+                              data-bs-target="#profile-edit">Edit Profile</button></li>
+                        <li class="nav-item"> <button class="nav-link" data-bs-toggle="tab"
+                              data-bs-target="#profile-change-password">Change Password</button></li>
+                     </ul>
+                     <div class="tab-content pt-2">
+                        <div class="tab-pane fade show active profile-overview" id="profile-overview">
+                           <h5 class="card-title">About</h5>
+                           <p class="small fst-italic">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, corporis incidunt odit suscipit labore animi repudiandae at quo doloribus pariatur officiis nulla quasi expedita. Inventore tempore exercitationem nulla! Dolor voluptatum quia nisi? Cumque enim rerum quisquam laborum asperiores adipisci maxime autem quam maiores aliquid consequuntur officia inventore saepe, unde dolorem.</p>
+                           <h5 class="card-title">Profile Details</h5>
+                           <div class="row">
+                              <div class="col-lg-3 col-md-4 label ">Full Name</div>
+                              <div class="col-lg-9 col-md-8">Nahid hasan</div>
+                           </div>
+                           <div class="row">
+                              <div class="col-lg-3 col-md-4 label">Job Position</div>
+                              <div class="col-lg-9 col-md-8">Libarian</div>
+                           </div>
+                           <div class="row">
+                              <div class="col-lg-3 col-md-4 label">Country</div>
+                              <div class="col-lg-9 col-md-8">Bangladesh</div>
+                           </div>
+                           <div class="row">
+                              <div class="col-lg-3 col-md-4 label">Address</div>
+                              <div class="col-lg-9 col-md-8">Kurigram, Rangpur, Bangladesh</div>
+                           </div>
+                           <div class="row">
+                              <div class="col-lg-3 col-md-4 label">Phone</div>
+                              <div class="col-lg-9 col-md-8">01750423751</div>
+                           </div>
+                           <div class="row">
+                              <div class="col-lg-3 col-md-4 label">Email</div>
+                              <div class="col-lg-9 col-md-8"><a href="">ovi@gmail.com</a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="tab-pane fade profile-edit pt-3" id="profile-edit">
+                           <form>
+                              <div class="row mb-3">
+                                 <label for="profileImage" class="col-md-4 col-lg-3 col-form-label">Profile
+                                    Image</label>
+                                 <div class="col-md-8 col-lg-9">
+                                    <img src="assets/img/nahid.jpg" alt="Profile">
+                                    <div class="pt-2">
+                                       <span class="btn btn-primary btn-file">
+                                          Change Photo <input type="file">
+                                       </span>
+                                       <a href="#" class="btn btn-danger btn-sm" title="Remove my profile image"><i
+                                             class="bi bi-trash"></i><span>Remove</span></a>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="row mb-3">
+                                 <label for="fullName" class="col-md-4 col-lg-3 col-form-label">Full Name</label>
+                                 <div class="col-md-8 col-lg-9"> <input name="fullName" type="text" class="form-control"
+                                       id="fullName" value="Nahid Hasan"></div>
+                              </div>
+                              <div class="row mb-3">
+                                 <label for="about" class="col-md-4 col-lg-3 col-form-label">About</label>
+                                 <div class="col-md-8 col-lg-9">
+                                    <textarea name="about" class="form-control" id="about"   style="height: 100px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo libero, ab ipsum laboriosam molestias quos? Recusandae, ipsam. Minus rem ullam velit doloribus nesciunt tempore obcaecati voluptatem recusandae molestias tenetur quaerat repellat deserunt beatae quidem voluptate, culpa doloremque corrupti esse voluptates numquam quisquam atque ab sunt. Modi eum iste voluptates sapiente.</textarea>
+                                 </div>
+                              </div>
+                              <div class="row mb-3">
+                                 <label for="Job" class="col-md-4 col-lg-3 col-form-label">Job Position</label>
+                                 <div class="col-md-8 col-lg-9"> <input name="job" type="text" class="form-control"
+                                       id="Job" value="Libarian"></div>
+                              </div>
+                              <div class="row mb-3">
+                                 <label for="Country" class="col-md-4 col-lg-3 col-form-label">Country</label>
+                                 <div class="col-md-8 col-lg-9"> <input name="country" type="text" class="form-control"
+                                       id="Country" value="Bangladesh"></div>
+                              </div>
+                              <div class="row mb-3">
+                                 <label for="Address" class="col-md-4 col-lg-3 col-form-label">Address</label>
+                                 <div class="col-md-8 col-lg-9"> <input name="address" type="text" class="form-control"
+                                       id="Address" value="Kurigram, Rangpur, Bangladesh"></div>
+                              </div>
+                              <div class="row mb-3">
+                                 <label for="Phone" class="col-md-4 col-lg-3 col-form-label">Phone</label>
+                                 <div class="col-md-8 col-lg-9"> <input name="phone" type="text" class="form-control"
+                                       id="Phone" value="01750423751"></div>
+                              </div>
+                              <div class="row mb-3">
+                                 <label for="Email" class="col-md-4 col-lg-3 col-form-label">Email</label>
+                                 <div class="col-md-8 col-lg-9"> <input name="email" type="email" class="form-control"
+                                       id="Email" value="abc@example.com"></div>
+                              </div>
+                              <div class="text-center"> <button type="submit" class="btn btn-primary">Save
+                                    Changes</button></div>
+                           </form>
+                        </div>
+                        <div class="tab-pane fade pt-3" id="profile-change-password">
+                           <form>
+                              <div class="row mb-3">
+                                 <label for="currentPassword" class="col-md-4 col-lg-3 col-form-label">Current
+                                    Password</label>
+                                 <div class="col-md-8 col-lg-9"> <input name="password" type="password"
+                                       class="form-control" id="currentPassword"></div>
+                              </div>
+                              <div class="row mb-3">
+                                 <label for="newPassword" class="col-md-4 col-lg-3 col-form-label">New Password</label>
+                                 <div class="col-md-8 col-lg-9"> <input name="newpassword" type="password"
+                                       class="form-control" id="newPassword"></div>
+                              </div>
+                              <div class="row mb-3">
+                                 <label for="renewPassword" class="col-md-4 col-lg-3 col-form-label">Re-enter New
+                                    Password</label>
+                                 <div class="col-md-8 col-lg-9"> <input name="renewpassword" type="password"
+                                       class="form-control" id="renewPassword"></div>
+                              </div>
+                              <div class="text-center"> <button type="submit" class="btn btn-primary">Change
+                                    Password</button></div>
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+   </main>
+   <footer id="footer" class="footer">
+      <div class="copyright"> &copy; Copyright <strong><span>LMS</span></strong>. All Rights Reserved</div>
+      <div class="credits">Design by Nahid Hasan</div>
+   </footer>
+   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+         class="bi bi-arrow-up-short"></i></a>
+   <script src="assets/js/apexcharts.min.js"></script>
+   <script src="assets/js/bootstrap.bundle.min.js"></script>
+   <script src="assets/js/chart.min.js"></script>
+   <script src="assets/js/echarts.min.js"></script>
+   <script src="assets/js/quill.min.js"></script>
+   <script src="assets/js/simple-datatables.js"></script>
+   <script src="assets/js/tinymce.min.js"></script>
+   <script src="assets/js/validate.js"></script>
+   <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

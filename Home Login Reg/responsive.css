@@ -1,0 +1,110 @@
+@media only screen and (max-width: 1366px) {
+    .left h1{
+        font-size: 70px;
+    }
+    .left h4{
+        font-size: 18px;
+    }
+    .button{
+        padding: 12px 20px;
+        font-size: 11px;
+    }
+    .button2{
+        padding: 12px 20px;
+        font-size: 11px;
+    }
+    .right{
+        width: 520px;
+        height: 83.5vh;
+    }
+  }
+
+  @media only screen and (max-width: 1080px) {
+    .main{
+        flex-wrap: wrap;
+    }
+    .right{
+        width: 100%;
+        height: 55vh;
+    }
+    .button{
+        padding: 20px 40px;
+        font-size: 18px;
+    }
+    .button2{
+        padding: 20px 40px;
+        font-size: 18px;
+    }
+    .left h1{
+        font-size: 85px;
+    }
+    .left h4{
+        font-size: 30px;
+    }
+    .nav{
+        height: 200px;
+    }
+    .logo{
+        margin-top: 10px;
+        height: 150px;
+        width: 150px;
+    }
+  }
+
+  @media only screen and (max-width: 644px) {
+    .button{
+        padding: 15px 20px;
+        font-size: 15px;
+    }
+    .button2{
+        padding: 15px 20px;
+        font-size: 15px;
+    }
+    .left h1{
+        font-size: 60px;
+    }
+    .left h4{
+        font-size: 20px;
+    }
+    .right{
+        height: 50vh;
+    }
+  }
+
+  @media only screen and (max-width: 412px) {
+    .main{
+        flex-wrap: wrap;
+    }
+    .right{
+        width: 100%;
+        height: 55vh;
+    }
+    .nav{
+        padding-right: 50px;
+        padding-left: 20px;
+    }
+    .button{
+        padding: 10px 20px;
+        font-size: 10px;
+    }
+    .button2{
+        padding: 10px 20px;
+        font-size: 10px;
+    }
+    .left{
+        margin-left: 20px;
+    }
+    .left h1{
+        font-size: 32px;
+    }
+    .left h4{
+        font-size: 13px;
+    }
+    .nav{
+        height: 200px;
+    }
+    .logo{
+        height: 100px;
+        width: 100px;
+    }
+  }
